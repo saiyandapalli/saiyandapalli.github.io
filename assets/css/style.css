@@ -1,0 +1,218 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+#first {
+  margin: 0;
+  max-width: none;
+  background-color: #F0F0F0;
+  height: 100vh;
+  border-bottom: solid 1px #C0C0C0;
+}
+
+#second{
+  height: 100vh;
+}
+#title {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 60px;
+}
+
+.undertext {
+  font-family: 'Share Tech Mono', monospace;
+  color: #888888;
+}
+
+.typed-quotes {
+
+}
+
+.typed-cursor {
+       opacity: 1;
+       animation: blink .7s infinite;
+   }
+
+   @keyframes blink {
+       0% {
+           opacity: 1;
+       }
+       50% {
+           opacity: 0;
+       }
+       100% {
+           opacity: 1;
+       }
+   }
+
+.just-text{
+  padding-top: 30vh;
+}
+
+
+#second {
+  width: 100%;
+  margin: 0;
+  max-width: none;
+  background-color: #f7f7f7;
+  height: 100vh;
+}
+
+
+.fullscreen {
+	text-align: center;
+	padding-bottom: 8em;
+	background-color: #fbfbfb;
+  padding-top: 80px;
+  position: relative;
+  width: 100%;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+/* The code below is from https://codepen.io/nxworld/pen/OyRrGy */
+
+#scrollerhome a {
+  padding-top: 70px;
+}
+#scrollerhome a span {
+  position: absolute;
+  bottom: 7%;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #000;
+  border-bottom: 1px solid #000;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+
+  -webkit-animation: sdb05 3s infinite;
+  animation: sdb05 3s infinite;
+
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb05 {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+@keyframes sdb05 {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+
+
+
+/* FOR SPINNING
+
+@-webkit-keyframes sdb06 {
+  0% {
+    -webkit-transform: rotateY(0) rotateZ(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotateY(720deg) rotateZ(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+@keyframes sdb06 {
+  0% {
+    transform: rotateY(0) rotateZ(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotateY(720deg) rotateZ(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+} */
+
+/* The code above is from https://codepen.io/nxworld/pen/OyRrGy */
+
+
+
+/* SECONDSCREEN */
+
+#second {
+  position: relative;
+
+
+}
+
+.button {
+    font-family: 'Quicksand', sans-serif;
+    font-weight:bold;
+    display: inline-block;
+    height: 50px;
+    width: 100px;
+    background: transparent;
+    color: #000;
+    border: 2px solid #000;
+    margin: 12px;
+    cursor: pointer;
+    opacity: 0.85;
+    transition-duration: .45s;
+    text-align: center;
+    line-height: 50px;
+}
+
+#row {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    width: 90%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#second {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.image {
+  position: absolute;
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 150%;
+  max-height: 150%;
+  /* object-fit: cover; */
+  -webkit-filter: blur(0px) grayscale(0%) opacity(50%);
+  filter: blur(0px) grayscale(0%) opacity(50%);
+  display: none;
+  -webkit-transform: translatez(0);
+  -moz-transform: translatez(0);
+  -ms-transform: translatez(0);
+  -o-transform: translatez(0);
+  transform: translatez(0);
+
+}
